@@ -21,7 +21,7 @@ Hi — I'm Aveer. I build practical tools for self-hosting, automation, and loca
 
 ## Support
 
-If you find my work useful, you can buy me a coffee (optional):
+If you find my work useful, you can buy me a coffee:
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-☕-ffdd00)](https://paypal.me/Aveerr1)
 
