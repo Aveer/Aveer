@@ -45,6 +45,8 @@ I spend a large part of my development time experimenting with **multi-agent sof
 
 I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My contributions focus on agent execution and configuration for real-world local AI workflows.
 
+I keep a public [fork](https://github.com/Aveer/oh-my-opencode-slim) as my upstream contribution workspace - a place for feature branches and PR history while contributing changes back to the main project, rather than as a separate long-term distribution.
+
 So far I've authored three substantial upstream PRs, with two merged:
 
 - **[PR #1179 - same-provider task scheduling](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179)** - merged. Adds an opt-in provider policy that converts same-provider background delegation to foreground execution, avoiding expensive model/KV-context switching on constrained local inference backends.
