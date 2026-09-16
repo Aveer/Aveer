@@ -43,11 +43,13 @@ I spend a large part of my development time experimenting with **multi-agent sof
 
 ### oh-my-opencode-slim
 
-I'm an upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework.
+I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My contributions focus on agent execution and configuration for real-world local AI workflows.
 
-My merged upstream work includes the `skills_add` / `skills_remove` configuration system for composing agent skills across global, project and preset layers.
+So far I've authored three substantial upstream PRs, with two merged:
 
-[PR #1190 - per-agent skills_add / skills_remove](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190)
+- **[PR #1179 - same-provider task scheduling](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179)** - merged. Adds an opt-in provider policy that converts same-provider background delegation to foreground execution, avoiding expensive model/KV-context switching on constrained local inference backends.
+- **[PR #1190 - composable per-agent skill configuration](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190)** - merged. Adds `skills_add` / `skills_remove` across layered global, project and preset configuration, including runtime resolution, wildcard/exclusion semantics, schema support, regression coverage and integration tests.
+- **[PR #1204 - automatic project-local skill discovery](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1204)** - open. Adds `skills_include_local` for automatically granting Agent Skills discovered under a project's `.opencode/skills`, with config layering, exclusion precedence, canonical-path boundary checks and integration coverage.
 
 ### Agent Skills
 
