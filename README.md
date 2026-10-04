@@ -98,6 +98,8 @@ The long-term direction is to give AI agents a controlled interface to **real-wo
 
 **C · ESP-IDF · ESP32 · ESP32-C5 · Wi-Fi · Zigbee · mDNS**
 
+> Currently private and under active development.
+
 ---
 
 ## Selected public projects
