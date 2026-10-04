@@ -100,6 +100,16 @@ The goal is to give AI agents a controlled way to interact with **real-world dev
 
 ## Selected public projects
 
+### [OMO Slim Preset Switcher](https://github.com/Aveer/omo-slim-preset-switcher)
+
+Small desktop utility for managing oh-my-opencode-slim presets across multiple projects.
+
+It supports separate Global / Project / Inherit semantics, bulk project changes, OMO Slim precedence rules and JSONC-preserving atomic writes without modifying OpenCode itself.
+
+**Python · Tkinter**
+
+---
+
 ### [OpenZeus](https://github.com/Aveer/OpenZeus)
 
 OpenCode setup, validation and asset-generation toolkit.
