@@ -2,9 +2,7 @@
 
 **AI Systems · Agentic Software Engineering · Local LLMs · Embedded Systems**
 
-I build practical AI infrastructure, developer tooling and embedded systems - with a strong focus on **local-first AI, agentic coding workflows and physical device integration**.
-
-My main work currently sits at the intersection of:
+I build local AI infrastructure, developer tools and embedded systems. Most of my current work is around **local LLMs, agentic coding workflows and connecting software agents to physical devices**.
 
 `LLM infrastructure` · `AI agents` · `developer tooling` · `ESP32 / IoT` · `robotics`
 
@@ -12,9 +10,9 @@ My main work currently sits at the intersection of:
 
 ## LM-Nexus
 
-**Local-first AI workspace and control center for developers.**
+**Local-first AI workspace and control center.**
 
-LM-Nexus is my main project. It combines local model management, chat, agents, terminals, files, knowledge, monitoring and system tooling in one browser-based environment.
+LM-Nexus is my main project. It brings local model management, chat, agents, terminals, files, knowledge, monitoring and system tooling into one browser-based environment.
 
 Highlights:
 
@@ -39,28 +37,26 @@ Highlights:
 
 ## Agentic software engineering
 
-A substantial part of my work is focused on **agentic software systems** - orchestration, delegation, reusable skills, configuration layering, execution semantics, verification and long-running coding workflows.
+I spend a lot of my development time on **agentic software engineering**: orchestration, delegation, reusable skills, configuration layering, execution semantics, verification and long-running coding workflows.
 
 ### oh-my-opencode-slim
 
-I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My contributions span **agent orchestration and runtime behavior, configuration and Agent Skills, native Companion UX and state, reliability, testing and CI**.
+I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My work there covers agent runtime behavior, configuration and Agent Skills, the native Companion UI, testing and CI.
 
-I keep a public [fork](https://github.com/Aveer/oh-my-opencode-slim) as my upstream contribution workspace - a place for feature branches and PR history while contributing changes back to the main project, rather than as a separate long-term distribution.
+I use my public [fork](https://github.com/Aveer/oh-my-opencode-slim) as a contribution workspace for branches and PRs going back upstream, not as a separate distribution.
 
-Representative upstream contributions include:
+Selected upstream work:
 
-- **[PR #1179 - local-inference-aware task scheduling](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179)** - adds an opt-in same-provider background-to-foreground policy to avoid costly model/KV-context switching on constrained local inference backends.
-- **[PR #1190 - composable per-agent skill configuration](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190)** - adds `skills_add` / `skills_remove` across layered global, project and preset configuration, including runtime resolution, wildcard/exclusion semantics and integration coverage.
-- **[PR #1204 - automatic project-local skill discovery](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1204)** - adds `skills_include_local` for safely granting Agent Skills discovered under project-local `.opencode/skills`, with config layering and canonical-path boundary checks.
-- **[PR #1419 - scoped native Companion preset switching](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1419)** - adds explicit Project / Global / Inherit preset control with session-targeted requests and compatibility-preserving state flow.
-- **[PR #1421 - live Companion agent status and model details](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1421)** - expands the native Companion with live execution context and waiting-input state while preserving canonical event semantics.
-- **[PR #1424 - cross-platform Companion Rust CI](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1424)** - adds pull-request validation for the native Rust Companion across Linux and Windows.
+- **Local inference scheduling - [#1179](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179):** same-provider background tasks can opt into foreground execution to avoid unnecessary model/KV-context switching on constrained local inference backends.
+- **Agent Skills configuration - [#1190](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190), [#1204](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1204):** composable per-agent skill additions/removals and automatic project-local skill discovery, with layered config semantics and path-boundary checks.
+- **Native Companion controls - [#1419](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1419), [#1421](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1421):** scoped Project / Global / Inherit preset switching plus live agent/model and waiting-input state.
+- **Companion CI - [#1424](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1424):** pull-request validation for the Rust Companion on Linux and Windows.
 
-Across these changes I tend to work end-to-end: trace runtime behavior, preserve compatibility boundaries, add regression and integration coverage, and carry changes through cross-platform validation and review remediation.
+Most of this work starts with tracing existing runtime behavior and ends with regression coverage, cross-platform validation and review fixes.
 
 ### Agent Skills
 
-[`Aveer/skills`](https://github.com/Aveer/skills) is my source-of-truth repository for reusable Agent Skills shared across OpenCode and other compatible coding environments.
+I keep reusable Agent Skills for OpenCode and compatible coding environments in [`Aveer/skills`](https://github.com/Aveer/skills).
 
 It includes workflows for:
 
@@ -77,7 +73,7 @@ It includes workflows for:
 
 ## Nexus Devices
 
-I'm extending the Nexus ecosystem into physical hardware through a shared ESP32 firmware platform.
+I'm building the hardware side of the Nexus ecosystem around a shared ESP32 firmware platform.
 
 Current capabilities include:
 
@@ -94,7 +90,7 @@ Current capabilities include:
 - OLED, distance and temperature sensors
 - embedded dashboards and JSON APIs
 
-The long-term direction is to give AI agents a controlled interface to **real-world devices and robotics hardware**.
+The goal is to give AI agents a controlled way to interact with **real-world devices and, eventually, robotics hardware**.
 
 **C · ESP-IDF · ESP32 · ESP32-C5 · Wi-Fi · Zigbee · mDNS**
 
@@ -155,4 +151,4 @@ The current maintained implementation is PowerShell-first; the old Python-packag
 
 ## Current interests
 
-Local AI infrastructure · agentic coding · multi-agent systems · developer tooling · embedded systems · robotics · physical-world AI interfaces
+Local AI infrastructure · agentic coding · multi-agent systems · developer tooling · embedded systems · robotics · AI-to-device interfaces
