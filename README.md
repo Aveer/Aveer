@@ -39,19 +39,24 @@ Highlights:
 
 ## Agentic software engineering
 
-I spend a large part of my development time experimenting with **multi-agent software engineering** - orchestration, delegation, reusable skills, configuration layering, verification and long-running coding workflows.
+A substantial part of my work is focused on **agentic software systems** - orchestration, delegation, reusable skills, configuration layering, execution semantics, verification and long-running coding workflows.
 
 ### oh-my-opencode-slim
 
-I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My contributions focus on agent execution and configuration for real-world local AI workflows.
+I'm an active upstream contributor to [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim), an OpenCode multi-agent orchestration framework. My contributions span **agent orchestration and runtime behavior, configuration and Agent Skills, native Companion UX and state, reliability, testing and CI**.
 
 I keep a public [fork](https://github.com/Aveer/oh-my-opencode-slim) as my upstream contribution workspace - a place for feature branches and PR history while contributing changes back to the main project, rather than as a separate long-term distribution.
 
-So far I've authored three substantial upstream PRs, with two merged:
+Representative upstream contributions include:
 
-- **[PR #1179 - same-provider task scheduling](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179)** - merged. Adds an opt-in provider policy that converts same-provider background delegation to foreground execution, avoiding expensive model/KV-context switching on constrained local inference backends.
-- **[PR #1190 - composable per-agent skill configuration](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190)** - merged. Adds `skills_add` / `skills_remove` across layered global, project and preset configuration, including runtime resolution, wildcard/exclusion semantics, schema support, regression coverage and integration tests.
-- **[PR #1204 - automatic project-local skill discovery](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1204)** - open. Adds `skills_include_local` for automatically granting Agent Skills discovered under a project's `.opencode/skills`, with config layering, exclusion precedence, canonical-path boundary checks and integration coverage.
+- **[PR #1179 - local-inference-aware task scheduling](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1179)** - adds an opt-in same-provider background-to-foreground policy to avoid costly model/KV-context switching on constrained local inference backends.
+- **[PR #1190 - composable per-agent skill configuration](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1190)** - adds `skills_add` / `skills_remove` across layered global, project and preset configuration, including runtime resolution, wildcard/exclusion semantics and integration coverage.
+- **[PR #1204 - automatic project-local skill discovery](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1204)** - adds `skills_include_local` for safely granting Agent Skills discovered under project-local `.opencode/skills`, with config layering and canonical-path boundary checks.
+- **[PR #1419 - scoped native Companion preset switching](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1419)** - adds explicit Project / Global / Inherit preset control with session-targeted requests and compatibility-preserving state flow.
+- **[PR #1421 - live Companion agent status and model details](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1421)** - expands the native Companion with live execution context and waiting-input state while preserving canonical event semantics.
+- **[PR #1424 - cross-platform Companion Rust CI](https://github.com/alvinunreal/oh-my-opencode-slim/pull/1424)** - adds pull-request validation for the native Rust Companion across Linux and Windows.
+
+Across these changes I tend to work end-to-end: trace runtime behavior, preserve compatibility boundaries, add regression and integration coverage, and carry changes through cross-platform validation and review remediation.
 
 ### Agent Skills
 
