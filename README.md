@@ -1,4 +1,4 @@
-# Aveer
+# Aver
 
 **AI Systems · Agentic Software Engineering · Local LLMs · Embedded Systems**
 
