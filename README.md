@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/aver-banner.png" alt="Aver — Local AI · Agentic Systems · Embedded" width="100%">
+</p>
+
 # Aver
 
 **AI Systems · Agentic Software Engineering · Local LLMs · Embedded Systems**
